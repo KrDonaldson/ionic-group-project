@@ -14,7 +14,7 @@ export class AppComponent {
     {
       title: 'Registration',
       url: '/registration',
-      icon: 'form'
+      icon: ''
     },
     {
       title: 'To Dos',
