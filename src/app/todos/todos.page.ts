@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../todo.service';
+import { Todo } from '../todo';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todos.page.scss'],
   providers: [TodoService]
 })
+
 export class TodosPage implements OnInit {
 
   newTodo: Todo = new Todo();
