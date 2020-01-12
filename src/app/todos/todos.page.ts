@@ -1,22 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../todo.service';
 import { Todo } from '../todo';
+import { TodoService } from '../todo.service';
 
-
-@Component({
-  selector: 'app-todos',
-  templateUrl: './todos.page.html',
-  styleUrls: ['./todos.page.scss'],
-  providers: [TodoService]
-})
-
-export class TodosPage implements OnInit {
+export class TodoComponent {
 
   newTodo: Todo = new Todo();
 
-  constructor(private _todoServe: TodoService) { }
+  constructor(private _todoServe: TodoService) {
 
-  ngOnInit() {
   }
 
   addTodo() {
