@@ -14,7 +14,7 @@ export class RegistrationPage implements OnInit {
   }
 
   goHome() {
-    this._route.navigate(['/home'])
+    this._route.navigate(['/todos'])
   }
 
 }
