@@ -29,7 +29,7 @@ export class AppComponent {
     {
       title: 'To Dos',
       url: '/todos',
-      icon: 'check'
+      icon: 'list'
     }
   ];
 
