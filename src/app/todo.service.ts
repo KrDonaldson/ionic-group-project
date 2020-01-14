@@ -1,4 +1,3 @@
-import { TodoServiceService } from './todo-service.service';
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
 
@@ -10,7 +9,7 @@ export class TodoService {
 
   todos: Todo[] = [];
 
-  constructor(public _todo: TodoServiceService) { }
+  constructor() { }
 
   //Simulate POST /todos
   addTodo(todo: Todo): TodoService {
