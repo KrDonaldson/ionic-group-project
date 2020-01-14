@@ -9,30 +9,29 @@ import { Component, OnInit } from '@angular/core';
 
 export class TodosPage {
 
-  // newTodo: Todo = new Todo();
 
-  constructor() {
-    // private _todoServe: TodoService
-  // }
+  constructor(public _todoServe : TodoServiceService ) {     }
 
-  // addTodo() {
-  //   if (!this.newTodo.title) {
-  //     return;
-  //   }
+  newTodo : Todo = new Todo();
+ 
+  addTodo() {
+    if (!this.newTodo.title) {
+      return;
+    }
 
-  //   this._todoServe.addTodo(this.newTodo);
-  //   this.newTodo = new Todo();
-  // }
+    this._todoServe.addTodo(this.newTodo);
+    this.newTodo = new Todo();
+  }
 
-  // toggleTodoComplete(todo) {
-  //   this._todoServe.toggleTodoComplete(todo);
-  // }
+  toggleTodoComplete(todo) {
+    this._todoServe.toggleTodoComplete(todo);
+  }
 
-  // removeTodo(todo) {
-  //   this._todoServe.deleteTodoById(todo.id);
-  // }
+  removeTodo(todo) {
+    this._todoServe.deleteTodoById(todo.id);
+  }
 
-  // get todos() {
-  //   return this._todoServe.getAllTodos();
+  get todos() {
+    return this._todoServe.getAllTodos();
   }
 }
