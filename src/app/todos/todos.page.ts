@@ -1,22 +1,17 @@
 import { TodoServiceService } from './../todo-service.service';
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
+// import { Todo } from '../todo';
+// import { TodoService } from '../todo.service';
+
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.page.html',
   styleUrls: ['./todos.page.scss'],
 })
-export class TodosPage implements OnInit {
-
-  constructor(public _todo: TodoServiceService) { }
-=======
-// import { Todo } from '../todo';
-// import { TodoService } from '../todo.service';
 
 export class TodosPage {
 
   // newTodo: Todo = new Todo();
->>>>>>> 6e989afda38660bf00eff8e046877f35cc8b8b84
 
   constructor() {
     // private _todoServe: TodoService
