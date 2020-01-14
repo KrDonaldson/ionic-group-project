@@ -1,6 +1,6 @@
 import { TodoService } from './../todo.service';
 import { Component, OnInit } from '@angular/core';
-// import { Todo } from '../todo';
+import { Todo } from '../todo';
 
 @Component({
   selector: 'app-todos',
@@ -11,16 +11,16 @@ import { Component, OnInit } from '@angular/core';
 export class TodosPage {
 
 
-  constructor(public _todo: TodoService) {
-    // private _todoServe: TodoService
-  // }
+  newTodo: Todo = new Todo();
+
+  constructor(private _todoServe: TodoService) {
+
+  }
 
   addTodo() {
-    if (!this._todo.todos) {
-      return
+    if (!this.newTodo.title) {
+      return;
     }
-
-  };
 
     this._todoServe.addTodo(this.newTodo);
     this.newTodo = new Todo();
