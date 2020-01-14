@@ -18,8 +18,10 @@ export class TodosPage {
 
   addTodo() {
     if (!this._todo.todos) {
-      return;
+      return
     }
+
+  };
 
   //   this._todoServe.addTodo(this.newTodo);
   //   this.newTodo = new Todo();
