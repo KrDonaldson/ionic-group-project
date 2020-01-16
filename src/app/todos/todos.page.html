@@ -21,7 +21,7 @@
               class="toggle" 
               type="checkbox" 
               (click)="toggleTodoComplete(todo)" 
-              [checked]="todo.complete"
+              [checked]="true"
               >
             <app-need-to [todo]="todo.title"></app-need-to>
             <ion-button color="primary"  (click)="removeTodo(todo)">Remove</ion-button>
