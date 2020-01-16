@@ -1,3 +1,4 @@
+import { NeedToComponent } from './../need-to/need-to.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -8,6 +9,7 @@ import { TodosPageRoutingModule } from './todos-routing.module';
 
 import { TodosPage } from './todos.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { TodosPage } from './todos.page';
     IonicModule,
     TodosPageRoutingModule
   ],
-  declarations: [TodosPage]
+  declarations: [TodosPage, NeedToComponent]
 })
 export class TodosPageModule {}

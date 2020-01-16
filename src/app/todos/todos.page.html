@@ -17,8 +17,13 @@
       <ul class="todo-list">
         <ion-item *ngFor="let todo of todos" [class.completed]="todo.complete">
           <div class="view">
-            <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
-            <label>{{todo.title}}</label>
+            <input 
+              class="toggle" 
+              type="checkbox" 
+              (click)="toggleTodoComplete(todo)" 
+              [checked]="todo.complete"
+              >
+            <app-need-to [todo]="todo.title"></app-need-to>
             <ion-button color="primary"  (click)="removeTodo(todo)">Remove</ion-button>
 
           </div>

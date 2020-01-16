@@ -1,6 +1,8 @@
 import { TodoService } from './../todo.service';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../todo';
+import  {NeedToComponent} from '../need-to/need-to.component';
+
 
 @Component({
   selector: 'app-todos',
@@ -10,7 +12,7 @@ import { Todo } from '../todo';
 
 export class TodosPage {
 
-
+  name: string = "Peter" 
   newTodo: Todo = new Todo();
 
   constructor(private _todoServe: TodoService) {
